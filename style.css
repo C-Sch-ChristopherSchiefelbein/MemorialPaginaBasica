@@ -1,0 +1,97 @@
+
+.texto-destacado{
+    color: #1E3A8A;
+    text-align: center;
+
+}
+
+.titulo-blog{
+   color: #6B7280;
+   text-align: center;
+}
+
+.descripcion{
+    color: #6B7280;
+    text-align: center; 
+}
+
+
+body {
+    background-color: #FFF7ED; /* Crema claro */
+    margin: 0; /* Elimina márgenes predeterminados */
+    font-family: Arial, sans-serif; /* Fuente suave para mejor legibilidad */
+}
+
+video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border: 2px solid #4A4033; /* Para que combine con tu botón urgente */
+    border-radius: 5px;
+}
+
+/* Ajustar el header y footer para que se vean bien con el fondo */
+header {
+    background-color: #EDE4E0; /* Un tono más oscuro que el fondo para contraste */
+    padding: 20px;
+}
+
+footer {
+    background-color: #EDE4E0; /* Igual que el header para consistencia */
+    padding: 20px;
+}
+
+
+/* Estilo para la galería de imágenes */
+.galeria {
+    display: flex; /* Alinea los elementos en una fila */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 15px; /* Espacio entre las imágenes */
+    margin: 20px 0; /* Espacio arriba y abajo */
+    flex-wrap: wrap; /* Ajusta las imágenes al tamaño del contenedor, LO CUAL SE REFLEJA EN EL DISPOSITIVO Actual */
+}
+
+/* Ajustar las imágenes */
+.TernuraAnniz, .bebes, .yoymipana {
+    height: 300px;
+    width: 300px;
+}
+
+.urgente{
+   background-color: #4A4033; 
+   color: aliceblue;
+}
+
+
+section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  h2 {
+    color: #6B7280;
+  }
+  
+  ul {
+    list-style-type: none; /* Quita las viñetas predeterminadas */
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+  }
+  
+  a {
+    color: #1E3A8A;
+    text-decoration: none; /* Quita el subrayado */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+  }
+
+  .piepag{
+    color: #6B7280;
+    text-align: center; 
+}

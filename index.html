@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicando</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1 class="titulo-blog">Memorial de Anniz y Amigos</h1><br>
+    </header>
+    <main>
+        <h1 class="titulo-blog">PARA TODOS LOS GATITOS QUE MIRAN DESDE EL CIELO</h1><br>
+
+        <div class="galeria">
+            <img class="TernuraAnniz" src="ASSETS/tkmANNIZ.jpg" alt="gatito lindo anniz">
+            <img class="bebes" src="ASSETS/3miaus.jpg" alt="mis 3 bbys">
+            <img class="yoymipana" src="ASSETS/sadmiau.jpg" alt="te extraño anniz">
+        </div>
+
+        <p class="texto-destacado">Plomo y blanco, tierno y jugueton, 
+            querido gatito, siempre estaras dentro de mi corazon ❤️</p>
+        <p class="descripcion">El mejor amigo de mi propia experiencia, un dia saliste y no llegaste mas;<br> 
+            Los amigos que encuentres en el camino, te diran que te extraño, ojala regreses,
+            <strong>Anniz</strong> </p>
+
+        <!-- lista de recuerdos de Anniz y otros gatitos dentro de <main>. 
+            Cada elemento de la lista será un enlace que, al hacer clic, muestre un mensaje en una alerta.-->    
+        
+        <section>
+            <h2>Cada imagen representa:</h2>
+            <ul>
+                <li><a href="#" onclick="alert('Anniz siempre se sentaba en esa silla como un rey, incluso durmiendo era un rey')">1- El trono de Anniz</a></li>
+                <li><a href="#" onclick="alert('Los tres maullaban juntos cada mañana para comer, me sentia feliz, ahora son solo 2 :( ')">2- El coro de la mañana</a></li>
+                <li><a href="#" onclick="alert('Anniz jugaba con con sus juguetes y rodaba por toda la pieza, metia mucho ruido, ahora todo esta en silencio :c ')">3- Mi mejor amigo</a></li>
+            </ul>
+        </section>
+
+        <!-- <textarea> para que los visitantes escriban un mensaje para los gatitos. 
+            Incluye un botón que muestre el mensaje en una alerta con JS. -->
+        <br> <br>
+        <video width="400" height="300" controls >
+            <source src="ASSETS/amasando.mp4" type="video/mp4">
+            Tu navegador no soporta el video. <a href="ASSETS/anniz-amasando.mp4">Descarga el video</a>.
+        </video>
+        <section>
+            <h2>Envía un mensaje al cielo de los gatitos</h2>
+            <textarea id="mensajeCielo" placeholder="Escribe un mensaje para Anniz y los gatitos que lo acompañan, donde quiera que esten..." rows="4" cols="50"></textarea>
+            <br>
+            <button class="urgente" onclick="mostrarMensaje()">Enviar cariño</button>
+         </section>
+  
+        <script>
+            function mostrarMensaje() {
+            let mensaje = document.getElementById("mensajeCielo").value;
+            if (mensaje) {
+            alert("Mensaje enviado al cielo: " + mensaje);
+            } else {
+            alert("Por favor, escribe un mensaje primero.");
+            }
+        }
+        </script>
+
+
+    </main>
+    
+    <footer>
+        <br>
+        <p class="piepag">Con amor para todos los gatitos que miran desde el cielo 🌟</p>
+    </footer>
+</body>
+</html>
